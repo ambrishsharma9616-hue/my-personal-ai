@@ -68,3 +68,18 @@
 
 </body>
 </html>
+<div style="margin:20px;">
+  <input id="question" type="text" placeholder="अपना सवाल लिखें..."
+    style="width:70%;padding:12px;">
+  <button onclick="askAI()" style="padding:12px;">Send</button>
+
+  <p id="answer"></p>
+</div>
+
+<script>
+function askAI() {
+  const q = document.getElementById("question").value;
+  document.getElementById("answer").innerText =
+    "आपने पूछा: " + q + "\n\nAI जवाब देने के लिए तैयार है 🤖";
+}
+</script>
